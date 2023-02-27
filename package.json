@@ -1,14 +1,15 @@
 {
-  "name": "whatsapp-spam",
+  "name": "wpp-spam",
   "description": "Call your afk friend",
   "version": "0.0.1",
   "license": "MIT",
   "bin": {
-    "whatsapp-spam": "index.js"
+    "wpp-spam": "index.js"
   },
   "author": "victor-harry <victorhcharry@gmail.com> (https://victor-harry.com)",
   "keywords": [
     "whatsapp-spam",
+    "wpp-spam",
     "whatsapp",
     "message",
     "spam",
