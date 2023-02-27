@@ -6,7 +6,7 @@ module.exports = ({ clear = true }) => {
 	unhandled();
 	welcome({
 		title: `whatsapp-spam`,
-		tagLine: `by Harry`,
+		tagLine: `by Victor Harry`,
 		description: pkg.description,
 		version: pkg.version,
 		bgColor: '#36BB09',
