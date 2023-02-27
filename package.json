@@ -1,0 +1,39 @@
+{
+	"name": "whatsapp-spam",
+	"description": "Call your afk friend",
+	"version": "0.0.1",
+	"license": "MIT",
+	"bin": {
+		"whatsapp-spam": "index.js"
+	},
+	"author": {
+		"name": "Harry",
+		"email": "victorhcharry@gmail.com",
+		"url": "https://victor-harry.com"
+	},
+	"keywords": [
+		"whatsapp-spam",
+		"Harry"
+	],
+	"files": [
+		"index.js",
+		"utils"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cli-alerts": "^1.2.2",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.1",
+		"cli-meow-help": "^3.1.0",
+		"cli-welcome": "^2.2.2",
+		"meow": "^9.0.0",
+		"qrcode-terminal": "^0.12.0",
+		"whatsapp-web.js": "^1.19.4"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.4"
+	}
+}
