@@ -20,7 +20,7 @@ const { clear, debug } = flags;
 
 function whatsapp({ phone, message, secondsInterval }) {
     let victimIsOn = false
-    const victimPhone = `55${phone}@c.us`
+    const victimPhone = `${phone}@c.us`
 
     client.on('qr', (qr) => {
         // Generate and scan this code with your phone
