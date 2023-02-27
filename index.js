@@ -47,7 +47,7 @@ function whatsapp({ phone, message, secondsInterval }) {
         let counter = 1
         while (!victimIsOn) {
             client.sendMessage(victimPhone, `${counter}: ${message}`)
-            console.log(`✉️&nbsp&nbsp${counter} message sent.`)
+            console.log(`✉️  ${counter} message sent.`)
             counter++
             await sleep(secondsInterval * 1000)
         }
@@ -56,11 +56,12 @@ function whatsapp({ phone, message, secondsInterval }) {
 
 (async () => {
 	init({ clear });
-	input.includes(`help`) && cli.showHelp(0);
 	if (input.includes(`call`) && flags.seconds >= 1) {
 		input.includes(`call`) && whatsapp({ phone: flags.phone, message: flags.message, secondsInterval: flags.seconds })
 	} else if (flags.seconds < 1) {
 		console.log("To avoid being banned from whatsapp set the seconds above or equals 1")
+	} else {
+		cli.showHelp(0)
 	}
 	debug && log(flags);
 })();
