@@ -35,9 +35,9 @@ The default time interval is 1 second and nothing below 1 will be accepted to av
 
 ## Formatting messages
 
-### Breakline
+### Line break
 
-You can breakline and even leave blank lines if you repeat \n
+You can line break and even leave blank lines if you repeat \n
 
 \n
 ``` sh
