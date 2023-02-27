@@ -7,7 +7,7 @@ Whatsapp Spam is an application written in NodeJS that allows you to send messag
 
 ## What do I need?
 
-Do `node` acima da **versão 6**.
+`node` above version **6**.
 
 ## Installation
 
