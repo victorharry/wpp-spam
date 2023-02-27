@@ -81,6 +81,6 @@ wpp-spam --phone '553198988787' --message "```Monospace Let's play 🎮```Normal
 
 ## Why!?
 
-"Why would you do such thing!?" Because I'm Brazilian HU3BR
+"Why would you do such thing!?" Because I'm Brazilian HU3BR and my friends like to spend 1 hour to drink water 🥤 after "brb"
 
 ![6096234_700b](https://user-images.githubusercontent.com/1585655/29083653-d40bb660-7c3f-11e7-896c-efd243f32918.jpg)
