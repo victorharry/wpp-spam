@@ -2,7 +2,7 @@ const qrcode = require('qrcode-terminal');
 const { Client } = require('whatsapp-web.js');
 const client = new Client();
 
-module.exports = ({ phone, message }) => {
+module.exports = ({ phone, message, secondsInterval }) => {
     let victimIsOn = false
     const victimPhone = `55${phone}@c.us`
 
@@ -33,7 +33,7 @@ module.exports = ({ phone, message }) => {
             client.sendMessage(victimPhone, `${counter}: ${message}`)
             console.log(`✉️&nbsp&nbsp${counter} message sent.`)
             counter++
-            await sleep(1000)
+            await sleep(secondsInterval * 1000)
         }
     }
 }

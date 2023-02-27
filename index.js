@@ -19,7 +19,10 @@ const { clear, debug } = flags;
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
-	input.includes(`call`) && Whatsapp({ phone: flags.phone, message: flags.message })
-	console.log(flags)
+	if (input.includes(`call`) && flags.seconds >= 1) {
+		input.includes(`call`) && Whatsapp({ phone: flags.phone, message: flags.message, secondsInterval: flags.seconds })
+	} else if (flags.seconds < 1) {
+		console.log("To avoid being banned from whatsapp set the seconds above or equals 1")
+	}
 	debug && log(flags);
 })();

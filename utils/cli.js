@@ -31,6 +31,11 @@ const flags = {
 	message: {
 		type: `string`,
 		desc: `Message to be sent`
+	},
+	seconds: {
+		type: `number`,
+		default: 1,
+		desc: `Interval in seconds between messages dispatch`
 	}
 };
 
