@@ -10,17 +10,55 @@
 const init = require('./utils/init');
 const cli = require('./utils/cli');
 const log = require('./utils/log');
-const Whatsapp = require('./whatsapp')
+const qrcode = require('qrcode-terminal');
+const { Client } = require('whatsapp-web.js');
 
+const client = new Client();
 const input = cli.input;
 const flags = cli.flags;
 const { clear, debug } = flags;
+
+function whatsapp({ phone, message, secondsInterval }) {
+    let victimIsOn = false
+    const victimPhone = `55${phone}@c.us`
+
+    client.on('qr', (qr) => {
+        // Generate and scan this code with your phone
+        // qrcode.generate(qr, {small: true});
+        qrcode.generate(qr, { small: true });
+    });
+
+    client.on('ready', () => {
+        console.log('Client is ready!');
+        callVictim()
+    });
+
+    client.on('message_create', msg => {
+        if (msg.from === victimPhone) victimIsOn = true
+    });
+
+    client.initialize();
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const callVictim = async () => {
+        let counter = 1
+        while (!victimIsOn) {
+            client.sendMessage(victimPhone, `${counter}: ${message}`)
+            console.log(`✉️&nbsp&nbsp${counter} message sent.`)
+            counter++
+            await sleep(secondsInterval * 1000)
+        }
+    }
+}
 
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
 	if (input.includes(`call`) && flags.seconds >= 1) {
-		input.includes(`call`) && Whatsapp({ phone: flags.phone, message: flags.message, secondsInterval: flags.seconds })
+		input.includes(`call`) && whatsapp({ phone: flags.phone, message: flags.message, secondsInterval: flags.seconds })
 	} else if (flags.seconds < 1) {
 		console.log("To avoid being banned from whatsapp set the seconds above or equals 1")
 	}
