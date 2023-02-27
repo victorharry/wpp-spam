@@ -1,9 +1,9 @@
-# Whatsapp Spam
+# Wpp Spam
 
 > Made in Brazil
 
 ## What is this?
-Whatsapp Spam is an application written in NodeJS that allows you to send message spam to your friends via WhatsApp.
+Wpp Spam is an application written in NodeJS that allows you to send message spam to your friends through WhatsApp.
 
 ## What do I need?
 
@@ -11,11 +11,11 @@ Whatsapp Spam is an application written in NodeJS that allows you to send messag
 
 ## Installation
 
-`sudo npm install -g whatsapp-spam`
+`sudo npm install -g wpp-spam`
 
-You will have the `whatsapp-spam` command available globally.
+You will have the `wpp-spam` command available globally.
 
-### Parâmetros
+### Parameters
 
 | Parameter | Required        | Description                                                 |
 |-----------|--------------------|-----------------------------------------------------------|
@@ -25,7 +25,7 @@ You will have the `whatsapp-spam` command available globally.
 
 ### Example
 
-`whatsapp-spam --phone '553198988787' --message 'Let's play 🎮' --seconds 10`
+`wpp-spam --phone '553198988787' --message 'Let's play 🎮' --seconds 10`
 
 Notes:
 
