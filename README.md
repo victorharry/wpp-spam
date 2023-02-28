@@ -2,6 +2,8 @@
 
 > Made in Brazil
 
+![wpp-spam usage](https://github.com/victorharry/wpp-spam/tree/main/resources/wpp-spam.gif)
+
 ## What is this?
 Wpp Spam is an application written in NodeJS that allows you to send message spam to your friends through WhatsApp. The bot will continue sending messages within the predefined interval until the victim responds with anything, thus successfully calling them.
 
