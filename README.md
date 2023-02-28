@@ -25,7 +25,7 @@ You will have the `wpp-spam` command available globally.
 
 ### Example
 
-`wpp-spam --phone '553198988787' --message "Let's play 🎮" --seconds 10` :shipit:
+`wpp-spam --phone=553198988787 --message="Let's play 🎮" --seconds=10` :shipit:
 
 Notes:
 
@@ -41,7 +41,7 @@ You can line break and even leave blank lines if you repeat \n
 
 \n
 ``` sh
-wpp-spam --phone '553198988787' --message "Let's play 🎮\nThis text is on the bottom line." --seconds 10
+wpp-spam --phone=553198988787 --message="Let's play 🎮\nThis text is on the bottom line." --seconds=10
 ```
 ### Italic
 
@@ -49,7 +49,7 @@ To italicize your message, place an underscore on both sides of the text:
 
 \_text\_
 ``` sh
-wpp-spam --phone '553198988787' --message "_Italic Let's play 🎮_Normal Let's play 🎮" --seconds 10
+wpp-spam --phone=553198988787 --message="_Italic Let's play 🎮_Normal Let's play 🎮" --seconds=10
 ```
 
 ### Bold
@@ -58,7 +58,7 @@ To bold your message, place an asterisk on both sides of the text:
 
 \*text\*
 ``` sh
-wpp-spam --phone '553198988787' --message "*Bolder Let's play 🎮*Normal Let's play 🎮" --seconds 10
+wpp-spam --phone=553198988787 --message="*Bolder Let's play 🎮*Normal Let's play 🎮" --seconds=10
 ```
 
 ### Strikethrough
@@ -67,7 +67,7 @@ To strikethrough your message, place a tilde on both sides of the text:
 
 \~text\~
 ``` sh
-wpp-spam --phone '553198988787' --message "˜Strikethrough Let's play 🎮˜Normal Let's play 🎮" --seconds 10
+wpp-spam --phone=553198988787 --message="˜Strikethrough Let's play 🎮˜Normal Let's play 🎮" --seconds=10
 ```
 
 ### Monospace
@@ -76,7 +76,7 @@ To monospace your message, place three backticks on both sides of the text:
 
 \`\`\`text\`\`\`
 ``` sh
-wpp-spam --phone '553198988787' --message "```Monospace Let's play 🎮```Normal Let's play 🎮" --seconds 10
+wpp-spam --phone=553198988787 --message="```Monospace Let's play 🎮```Normal Let's play 🎮" --seconds=10
 ```
 
 ## Why!?
