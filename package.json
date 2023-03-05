@@ -1,7 +1,7 @@
 {
   "name": "wpp-spam",
   "description": "Call your afk friend ✉️  👥 💤",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "MIT",
   "bin": {
     "wpp-spam": "index.js"
