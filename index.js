@@ -57,7 +57,7 @@ function whatsapp({ phone, message, secondsInterval }) {
 (async () => {
 	init({ clear });
 	if (flags.seconds >= 1 && flags.phone && flags.message) {
-		whatsapp({ phone: flags.phone, message: flags.message.replaceAl('\\n', '\n'), secondsInterval: flags.seconds })
+		whatsapp({ phone: flags.phone, message: flags.message.replaceAll('\\n', '\n'), secondsInterval: flags.seconds })
 	} else if (flags.seconds < 1) {
 		console.log("To avoid being banned from whatsapp set the seconds above or equals 1")
 	} else {
